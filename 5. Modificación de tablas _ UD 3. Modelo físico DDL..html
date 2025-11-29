@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/5_modificacin_de_tablas.html -->
+<html lang="es" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/base.css">
+<link rel="stylesheet" type="text/css" href="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/exe_highlighter.css">
+<link rel="stylesheet" type="text/css" href="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/content.css">
+<link rel="stylesheet" type="text/css" href="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/nav.css">
+
+<title>5. Modificación de tablas | UD 3. Modelo físico DDL. </title>
+<link rel="shortcut icon" href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/favicon.ico" type="image/x-icon">
+<meta name="author" content="María Elena González Moreno y Abelardo Martínez Serrano. Basado en y modificado de Abelardo Martínez, Pau Miñana Climent, Sergio Badal y Raquel Torres. CEED Comunidad Valenciana">
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net">
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/exe_jquery.js.descarga"></script>
+<script type="text/javascript" src="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/exe_highlighter.js.descarga"></script>
+<script type="text/javascript" src="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/common_i18n.js.descarga"></script>
+<script type="text/javascript" src="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/common.js.descarga"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body class="exe-web-site js" id="exe-node-25"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/5_modificacin_de_tablas.html#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" style="background-image: url(logojuandegaray_exe.png); background-repeat: no-repeat;" role="banner"><div id="headerContent">UD 3. Modelo físico DDL.</div></header>
+<p id="nav-toggler"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/5_modificacin_de_tablas.html#" onclick="myTheme.toggleMenu(this);return false" class="hide-nav" id="toggle-nav" title="Ocultar"><span>Menú</span></a></p><nav id="siteNav" role="navigation" style="padding-bottom: 41.62px; margin-bottom: 0px;">
+<ul>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/index.html" class="daddy main-node">DAW/DAM. Bases de datos (BD)</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/2_instalacin_de_mysql.html" class="daddy">2. Instalación de MySQL</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/21_sgbd_oracle.html" class="no-ch">2.1. SGBD Oracle</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/3_creacin_de_una_base_de_datos.html" class="daddy">3. Creación de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/31_ejemplo.html" class="no-ch">3.1. Ejemplo</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4_creacin_de_tablas.html" class="daddy">4. Creación de tablas</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/41_nombres_en_las_tablas.html" class="no-ch">4.1. Nombres en las tablas</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/42_tipos_de_datos.html" class="no-ch">4.2. Tipos de datos</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/43_create_table.html" class="daddy">4.3 CREATE TABLE<span> ►</span></a>
+      <ul class="other-section">
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/431_ejemplo.html" class="no-ch">4.3.1. Ejemplo</a></li>
+      </ul>
+      </li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/44_guiones_scripts.html" class="no-ch">4.4. Guiones (Scripts)</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/45_comentarios.html" class="no-ch">4.5. Comentarios</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/46_restricciones_de_tabla.html" class="daddy">4.6. Restricciones de tabla<span> ►</span></a>
+      <ul class="other-section">
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/461_not_null.html" class="no-ch">4.6.1. NOT NULL</a></li>
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/462_unique.html" class="no-ch">4.6.2. UNIQUE</a></li>
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/463_primary_key.html" class="no-ch">4.6.3. PRIMARY KEY</a></li>
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/464_auto_increment.html" class="no-ch">4.6.4. AUTO_INCREMENT</a></li>
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/465_foreign_key.html" class="no-ch">4.6.5. FOREIGN KEY</a></li>
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/466_check.html" class="daddy">4.6.6. CHECK<span> ►</span></a>
+         <ul class="other-section">
+            <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4661_opciones_ms_comunes.html" class="no-ch">4.6.6.1. Opciones más comunes</a></li>
+            <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4662_expresiones_con_operadores_lgicos.html" class="no-ch">4.6.6.2. Expresiones con operadores lógicos</a></li>
+            <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4663_expresiones_complejas.html" class="no-ch">4.6.6.3. Expresiones complejas</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li id="active"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/5_modificacin_de_tablas.html" class="active daddy">5. Modificación de tablas</a>
+   <ul>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/51_cambiar_de_nombre_una_tabla.html" class="no-ch">5.1. Cambiar de nombre una tabla</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/52_cambiar_de_nombre_una_columna.html" class="no-ch">5.2. Cambiar de nombre una columna</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/53_aadir_o_quitar_restricciones.html" class="no-ch">5.3. Añadir o quitar restricciones</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/54_aadir_o_quitar_columnas.html" class="no-ch">5.4. Añadir o quitar columnas</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/55_gestionar_claves_primarias.html" class="no-ch">5.5. Gestionar claves primarias</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/56_modificar_columnas.html" class="no-ch">5.6. Modificar columnas</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/57_modificar_restricciones.html" class="no-ch">5.7. Modificar restricciones</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/58_desactivar_restricciones.html" class="no-ch">5.8. Desactivar restricciones</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/59_ejemplo_completo_de_modificaciones.html" class="no-ch">5.9. Ejemplo completo de modificaciones</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/6_borrado_de_tablas.html" class="daddy">6. Borrado de Tablas</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/61_borrar_todo_el_contenido_de_una_tabla.html" class="no-ch">6.1. Borrar todo el contenido de una tabla</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/62_borrar_una_tabla_por_completo.html" class="no-ch">6.2. Borrar una tabla por completo</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/7_diccionario_de_datos.html" class="daddy">7. Diccionario de datos</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/71_consultar_el_nombre_de_restricciones.html" class="no-ch">7.1. Consultar el nombre de restricciones</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/8_motores_de_almacenamiento.html" class="no-ch">8. Motores de almacenamiento</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/9_bibliografa.html" class="no-ch">9. Bibliografía</a></li>
+</ul>
+</nav>
+<div id="topPagination">
+<nav class="pagination noprt"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/5_modificacin_de_tablas.html#" onclick="window.print();return false" title="Imprimir" class="print-page"><span>Imprimir</span></a> 
+<a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4663_expresiones_complejas.html" class="prev"><span><span>« </span>Anterior</span></a> <span class="sep">| </span><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/51_cambiar_de_nombre_una_tabla.html" class="next"><span>Siguiente<span> »</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main" role="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5. Modificación de tablas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id73">
+<div class="iDevice emphasis0">
+<div id="ta73_134_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Igual que ocurre con la creación, el proceso de modificación de tablas existentes se realiza mediante una única sentencia que tiene una nomenclatura compleja. No veremos aquí todas las opciones, sino una versión reducida con los siguientes parámetros:</p>
+<div class="highlighted-code language-sql">
+<div>
+<pre class="  language-sql"><code class="  language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> nombre_tabla opción_alter <span class="token punctuation">[</span><span class="token punctuation">,</span> opción_alter…<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+opción_alter: 
+{ <span class="token keyword">RENAME</span> nombre_tabla_nuevo
+<span class="token operator">|</span> <span class="token keyword">RENAME</span> <span class="token keyword">COLUMN</span> nombre_columna <span class="token keyword">TO</span> nuevo_nombre
+<span class="token operator">|</span> <span class="token keyword">ADD</span> restricción_tabla
+<span class="token operator">|</span> <span class="token keyword">ADD</span> nombre_columna tipo_datos <span class="token punctuation">[</span>definición_columna<span class="token punctuation">]</span> <span class="token punctuation">[</span>{<span class="token keyword">FIRST</span> <span class="token operator">|</span> <span class="token keyword">AFTER</span> nombre_columna}<span class="token punctuation">]</span> 
+<span class="token operator">|</span> <span class="token keyword">ADD</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>nombre_col1 <span class="token punctuation">[</span><span class="token punctuation">,</span>nombre_col2…<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">|</span> <span class="token keyword">DROP</span> {nombre_columna <span class="token operator">|</span> <span class="token keyword">CONSTRAINT</span> nombre_restricción}
+<span class="token operator">|</span> <span class="token keyword">DROP</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span>
+<span class="token operator">|</span> <span class="token keyword">MODIFY</span> nombre_columna tipo_datos <span class="token punctuation">[</span>definición_columna<span class="token punctuation">]</span> 
+  <span class="token punctuation">[</span>{<span class="token keyword">FIRST</span> <span class="token operator">|</span> <span class="token keyword">AFTER</span> nombre_columna}<span class="token punctuation">]</span> }</code></pre>
+</div>
+</div>
+<p style="text-align: justify;">Se pueden añadir varias <strong>opción_alter</strong> a una misma sentencia para realizar varios cambios a la vez. Incluso en una misma opción existe la posibilidad de añadir varios elementos entre paréntesis separados por comas, pero creemos mejor no complicar la nomenclatura para empezar.</p>
+<p style="text-align: justify;">Veamos en detalle cada opción, para ello usaremos la tabla de empleados de prueba1 y desharemos los cambios cada vez para volver al estado original.</p>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id="bottomPagination">
+<nav class="pagination noprt">
+<a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/4663_expresiones_complejas.html" class="prev"><span><span>« </span>Anterior</span></a> <span class="sep">| </span><a href="https://aules.edu.gva.es/fp/pluginfile.php/12032990/mod_resource/content/45/51_cambiar_de_nombre_una_tabla.html" class="next"><span>Siguiente<span> »</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="./5. Modificación de tablas _ UD 3. Modelo físico DDL._files/_style_js.js.descarga"></script></body></html>

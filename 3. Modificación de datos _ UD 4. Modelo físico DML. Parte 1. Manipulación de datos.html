@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/3_modificacin_de_datos.html -->
+<html lang="es" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/base.css">
+<link rel="stylesheet" type="text/css" href="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/exe_highlighter.css">
+<link rel="stylesheet" type="text/css" href="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/content.css">
+<link rel="stylesheet" type="text/css" href="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/nav.css">
+
+<title>3. Modificación de datos | UD 4. Modelo físico DML. Parte 1. Manipulación de datos </title>
+<link rel="shortcut icon" href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/favicon.ico" type="image/x-icon">
+<meta name="author" content="María Elena González Moreno y Abelardo Martínez Serrano. Basado en y modificado de Abelardo Martínez, Pau Miñana Climent, Sergio Badal y Raquel Torres. CEED Comunidad Valenciana">
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/">
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net">
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/exe_jquery.js.descarga"></script>
+<script type="text/javascript" src="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/exe_highlighter.js.descarga"></script>
+<script type="text/javascript" src="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/common_i18n.js.descarga"></script>
+<script type="text/javascript" src="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/common.js.descarga"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body class="exe-web-site js" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/3_modificacin_de_datos.html#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" style="background-image: url(logojuandegaray_exe.png); background-repeat: no-repeat;" role="banner"><div id="headerContent">UD 4. Modelo físico DML. Parte 1. Manipulación de datos</div></header>
+<p id="nav-toggler"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/3_modificacin_de_datos.html#" onclick="myTheme.toggleMenu(this);return false" class="hide-nav" id="toggle-nav" title="Ocultar"><span>Menú</span></a></p><nav id="siteNav" role="navigation" style="padding-bottom: 605.62px; margin-bottom: 0px;">
+<ul>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/index.html" class="daddy main-node">DAW/DAM. Bases de datos (BD)</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/2_insercin_de_datos.html" class="daddy">2. Inserción de datos</a>
+   <ul class="other-section">
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/21_insert_into.html" class="no-ch">2.1. INSERT INTO</a></li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/22_lista_de_campos_inclusinno_inclusin.html" class="daddy">2.2. Lista de campos. Inclusión/no inclusión<span> ►</span></a>
+      <ul class="other-section">
+         <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/221_ejemplo.html" class="no-ch">2.2.1. Ejemplo</a></li>
+      </ul>
+      </li>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/23_errores_en_la_insercin.html" class="no-ch">2.3. Errores en la inserción</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/3_modificacin_de_datos.html" class="active daddy">3. Modificación de datos</a>
+   <ul>
+      <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/31_ejemplo.html" class="no-ch">3.1. Ejemplo</a></li>
+   </ul>
+   </li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/4_borrado_de_datos.html" class="no-ch">4. Borrado de datos</a></li>
+   <li><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/5_bibliografa.html" class="no-ch">5. Bibliografía</a></li>
+</ul>
+</nav>
+<div id="topPagination">
+<nav class="pagination noprt"><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/3_modificacin_de_datos.html#" onclick="window.print();return false" title="Imprimir" class="print-page"><span>Imprimir</span></a> 
+<a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/23_errores_en_la_insercin.html" class="prev"><span><span>« </span>Anterior</span></a> <span class="sep">| </span><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/31_ejemplo.html" class="next"><span>Siguiente<span> »</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main" role="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Modificación de datos</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id10">
+<div class="iDevice emphasis0">
+<div id="ta10_130_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Si en el apartado anterior nos hemos equivocado al insertar los datos, ahora tendremos que modificarlos para dejarlos correctos. Esto implica actualizar con nuevos datos el registro erróneo y para ello SQL nos suministra la instrucción <strong>UPDATE</strong>. Obviamente también se usa cuando algún dato de las tablas cambie por el motivo que sea. La <strong>sintaxis</strong> a usar será:</p>
+<div class="highlighted-code language-sql">
+<div>
+<pre class="  language-sql"><code class="  language-sql"><span class="token keyword">UPDATE</span> nombre_tabla
+<span class="token keyword">SET</span> columna1<span class="token operator">=</span>{expresión <span class="token operator">|</span> <span class="token keyword">DEFAULT</span> <span class="token operator">|</span> <span class="token boolean">NULL</span>} <span class="token punctuation">[</span><span class="token punctuation">,</span> columna2…<span class="token punctuation">]</span>…
+<span class="token punctuation">[</span><span class="token keyword">WHERE</span> condición<span class="token punctuation">]</span></code></pre>
+</div>
+</div>
+<p style="text-align: justify;">La instrucción indica que queremos actualizar UPDATE una tabla <strong>nombre_tabla</strong> estableciendo <strong>SET</strong> los campos que queremos modificar a una expresión o valor determinado. Podemos colocar tantos campos con sus nuevos valores separados por comas como necesitemos.</p>
+<p style="text-align: justify;">Por último, aunque es opcional, debemos incluir la cláusula <strong>WHERE condición</strong> que nos permitirá seleccionar sobre qué registros se debe realizar la actualización. Puede ser ninguno, uno, varios o incluso todos los de la tabla, si todos los registros cumplen la condición del WHERE.</p>
+<p style="text-align: justify;">Lo habitual es que la condición haga referencia, al menos, a algún campo de la tabla.</p>
+<table style="width: 100%; background-color: #f2f0f0; border-color: #0d198c;" border="3" cellpadding="5">
+<tbody>
+<tr>
+<td style="width: 100%; text-align: justify;"><span style="color: #ff5254;"><strong>IMPORTANTE:</strong></span> si no ponemos el WHERE, el cambio se aplicará a todos los registros de la tabla. Un WHERE erróneo también es muy problemático, al afectar registros distintos a los deseados.</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id="bottomPagination">
+<nav class="pagination noprt">
+<a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/23_errores_en_la_insercin.html" class="prev"><span><span>« </span>Anterior</span></a> <span class="sep">| </span><a href="https://aules.edu.gva.es/fp/pluginfile.php/12208477/mod_resource/content/1/31_ejemplo.html" class="next"><span>Siguiente<span> »</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="./3. Modificación de datos _ UD 4. Modelo físico DML. Parte 1. Manipulación de datos_files/_style_js.js.descarga"></script></body></html>
